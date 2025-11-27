@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fray International Group - Global Trading Solutions</title>
+    <meta name="description" content="Premier trading of Toners, Cartridges, Office & School Stationery. Serving UAE, Oman, Saudi Arabia, Germany, Spain, India, China, Thailand, Indonesia." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Aptos', 'Aptos Display', 'Inter', 'system-ui', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fdf2f4',
+                100: '#fce7eb',
+                200: '#f8d3da',
+                300: '#f2b0bb',
+                400: '#ea8293',
+                500: '#df546b',
+                600: '#800020', // Proper Burgundy
+                700: '#6b001b',
+                800: '#520015',
+                900: '#3d000f',
+                950: '#260009',
+              },
+              accent: {
+                50: '#fffaeb',
+                100: '#fef3c7',
+                200: '#fde68a',
+                300: '#fcdf58',
+                400: '#facc15',
+                500: '#d4af37', // Gold
+                600: '#b08d1a',
+                700: '#8e6f10',
+                800: '#70560d',
+                900: '#54400a',
+              }
+            },
+            animation: {
+              'slow-zoom': 'slow-zoom 20s linear infinite alternate',
+            },
+            keyframes: {
+              'slow-zoom': {
+                '0%': { transform: 'scale(1.0)' },
+                '100%': { transform: 'scale(1.1)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { -webkit-font-smoothing: antialiased; }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .glass-dark {
+        background: rgba(128, 0, 32, 0.85); /* Burgundy tint */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="font-sans bg-gray-50 text-slate-800 selection:bg-brand-200 selection:text-brand-900">
+    <div id="root"></div>
+  </body>
+</html>
